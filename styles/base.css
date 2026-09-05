@@ -71,6 +71,9 @@ nav a:focus-visible {
 }
 
 main {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
 	width: min(1100px, calc(100% - 2rem));
 	margin: 0 auto;
 	padding: 3rem 0 4rem;
@@ -89,11 +92,6 @@ h1 {
 	text-align: center;
 }
 
-main {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 1.5rem;
-}
 
 main h1 {
 	grid-column: 1 / -1;
@@ -108,7 +106,7 @@ main h1 {
 	border: 1px solid var(--line);
 	border-top: 6px solid var(--teal);
 	background: var(--surface);
-	box-shadow: 0 8px 20px rgba(23, 32, 42, 0.08);
+	box-shadow: 0 8px 20px #17202a14;
 }
 
 .card h2 {
