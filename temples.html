@@ -8,16 +8,19 @@
     <meta name="author" content="Hania Flores">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Caacupe+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>🏛️ Temple Album</h1>
-        <nav>
-            <ul>
+        <h1>Temple Album</h1>
+        <nav aria-label="Main navigation">
+            <button id="menu-button" aria-expanded="false" aria-controls="menu">
+                ☰
+            </button>
+            <ul id="menu">
                 <li><a href="temples.html">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
