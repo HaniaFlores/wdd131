@@ -1,10 +1,11 @@
 :root {
 	--deep-teal: #173f4f;
-	--teal: #236477;
+	--teal: #2c7a7b;
 	--gold: #d9a441;
-	--paper: #f5f1e8;
-	--ink: #1d2a30;
+	--paper: #f4f1ea;
+	--ink: #17202a;
 	--white: #ffffff;
+	--border: #d6cdbd;
 }
 
 * {
@@ -78,7 +79,7 @@ nav a {
 	display: block;
 	padding: 0.45rem 0.65rem;
 	text-decoration: none;
-	 font-size: 1.3rem;
+	font-size: 1.3rem;
 	transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -111,9 +112,9 @@ main > h1 {
 
 figure {
 	background: var(--white);
-	border: 1px solid #d6cdbd;
+	border: 1px solid var(--border);
 	border-radius: 4px;
-	box-shadow: 0 3px 10px rgba(29, 42, 48, 0.12);
+	box-shadow: 0 3px 10px #17202a;
 	margin: 0;
 	overflow: hidden;
 }

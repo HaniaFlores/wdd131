@@ -3,7 +3,7 @@
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 1.25rem max(2rem, calc((100% - 1200px) / 2));
+		padding: 1.25rem 2rem;
 	}
 
 	header h1 {
