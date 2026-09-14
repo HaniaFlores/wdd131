@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="Country page for WDD 131 – Dynamic Web Fundamentals by Hania Flores, featuring information about Mexico.">
+    <meta name="author" content="Hania Flores">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Mexico</h1>
+    </header>
+
+    <main class="place-layout">
+        <section class="hero" aria-label="Mexico City landscape">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/zocalo.webp">
+                <img src="images/piramide.webp" alt="Ancient pyramid in Mexico" width="1200" height="600">
+            </picture>
+        </section>
+
+        <section class="info-panel data-panel" aria-labelledby="data-title">
+            <h2 id="data-title">Data</h2>
+            <dl>
+                <div><dt>Area:</dt><dd>1,964,375 sq km</dd></div>
+                <div><dt>Population:</dt><dd>130,262,216</dd></div>
+                <div><dt>Capital:</dt><dd>Mexico City</dd></div>
+                <div><dt>Languages:</dt><dd>Spanish</dd></div>
+                <div><dt>Currency:</dt><dd>Mexican peso</dd></div>
+                <div><dt>Time Zone:</dt><dd>UTC-6</dd></div>
+            </dl>
+        </section>
+
+        <section class="info-panel weather-panel" aria-labelledby="weather-title">
+            <div class="weather-heading">
+                <h2 id="weather-title">Weather</h2>
+            </div>
+            <dl>
+                <div><dt>Temperature:</dt><dd>24 °C</dd></div>
+                <div><dt>Conditions:</dt><dd>Partly cloudy</dd></div>
+                <div><dt>Wind:</dt><dd>12 km/h</dd></div>
+                <div><dt>Wind Chill:</dt><dd id="wind-chill">N/A</dd></div>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Hania Flores | Mexico</p>
+        <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
