@@ -83,7 +83,6 @@ h1 {
 	background: var(--panel-background);
 	box-shadow: 0 0.65rem 1.25rem var(--panel-shadow);
 	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
 }
 
 .data-panel {
