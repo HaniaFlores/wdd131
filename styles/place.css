@@ -6,6 +6,10 @@
 	--mexico-red: #ce1126;
 	--footer-red: #a50f20;
 	--line: #d9ddd8;
+	--panel-border: rgba(255, 255, 255, 0.7);
+	--panel-background: rgba(255, 255, 255, 0.82);
+	--panel-shadow: rgba(0, 0, 0, 0.28);
+	--title-shadow: rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -75,9 +79,9 @@ h1 {
 	z-index: 1;
 	margin: 1.5rem;
 	padding: 0 1.25rem 1.25rem;
-	border: 1px solid rgba(255, 255, 255, 0.7);
-	background: rgba(255, 255, 255, 0.82);
-	box-shadow: 0 0.65rem 1.25rem rgba(0, 0, 0, 0.28);
+	border: 1px solid var(--panel-border);
+	background: var(--panel-background);
+	box-shadow: 0 0.65rem 1.25rem var(--panel-shadow);
 	backdrop-filter: blur(3px);
 	-webkit-backdrop-filter: blur(3px);
 }
@@ -89,7 +93,7 @@ h1 {
 .data-panel h2 {
 	width: calc(100% + 1rem);
 	margin: 0.5rem 0 2rem -1.65rem;
-	box-shadow: 0 0.3rem 0.65rem rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.3rem 0.65rem var(--title-shadow);
 }
 
 .weather-panel {
@@ -109,7 +113,7 @@ h2 {
 	align-items: center;
 	width: calc(100% + 1rem);
 	margin: 0.5rem 0 2rem -1.65rem;
-	box-shadow: 0 0.3rem 0.65rem rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.3rem 0.65rem var(--title-shadow);
 }
 
 .weather-heading h2 {
@@ -158,7 +162,7 @@ dd {
 
 footer {
 	padding: 1rem;
-	color: #ffffff;
+	color: var(--surface);
 	background: var(--footer-red);
 	border-top: 0.75rem solid var(--mexico-green);
 	font-weight: 500;
@@ -207,7 +211,6 @@ footer p {
 		background: var(--surface);
 		box-shadow: none;
 		backdrop-filter: none;
-		-webkit-backdrop-filter: none;
 	}
 
 	.info-panel h2 {
