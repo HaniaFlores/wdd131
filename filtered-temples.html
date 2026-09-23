@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="This page displays a collection of temples from around the world">
+    <meta name="author" content="Hania Flores">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <nav aria-label="Main navigation">
+            <button id="menu-button" aria-expanded="false" aria-controls="menu">
+                ☰
+            </button>
+            <ul id="menu">
+                <li><a href="temples.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section id="temples">
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Hania Flores | Mexico</p>
+        <p> Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
