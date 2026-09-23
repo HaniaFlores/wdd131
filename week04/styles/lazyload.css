@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    animation: fadeFromBlack 1.5s ease-in forwards;
+    filter: brightness(0);
+}
+
+footer {
+    margin-top: 1rem;
+	padding: 1.5rem 1rem;
+	background: #17324d;
+    color: #fff;
+	text-align: center;
+}
+
+footer p {
+	margin: 0.1rem;
+}
+
+@keyframes fadeFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    50% {
+        opacity: 0.5;
+        filter: brightness(0.35);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
