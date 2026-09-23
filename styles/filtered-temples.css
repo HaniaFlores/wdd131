@@ -111,9 +111,9 @@ main > h1 {
 }
 
 .temple-card {
-	background: rgba(239, 239, 239, 0.9);
-	border: 1px solid #cfcfcf;
-	box-shadow: 0 2px 8px rgba(23, 47, 58, 0.12);
+	background: var(--white);
+	border: 1px solid var(--border);
+	box-shadow: 0 2px 8px var(--teal);
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -159,8 +159,8 @@ main > h1 {
 	height: 250px;
 	object-fit: cover;
 	width: 100%;
-	border: 1px solid #d5d5d5;
-	background: #dfeaf3;
+	border: 1px solid var(--border);
+	background: var(--paper);
 }
 
 footer {
