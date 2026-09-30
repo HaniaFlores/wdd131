@@ -1,0 +1,269 @@
+:root {
+  --primary: #243447;
+  --secondary: #3f6f7a;
+  --accent: #d9a441;
+  --background: #f5f7f8;
+  --surface: #ffffff;
+  --surface-soft: #eef2f3;
+  --text: #1f2933;
+  --muted: #5f6b76;
+  --border: #c8d1d6;
+  --focus: #2c6e91;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.02em;
+}
+
+main {
+  flex: 1;
+  max-width: 780px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+form,
+.confirmation section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(36, 52, 71, 0.08);
+}
+
+label,
+legend {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.85rem 1rem;
+  font: inherit;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus,
+input[type="date"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+  border-color: var(--focus);
+  box-shadow: 0 0 0 3px rgba(44, 110, 145, 0.18);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 1.75rem;
+}
+
+.rating {
+  padding: 1rem 0;
+}
+
+.rating-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.8rem;
+}
+
+.rating-options label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 84px;
+  padding: 0.6rem 0.25rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.rating-options label:hover {
+  background: white;
+  border-color: var(--accent);
+}
+
+.rating-options span {
+  font-size: 1.15rem;
+  color: #b57a12;
+  white-space: nowrap;
+}
+
+.rating-options input {
+  width: 1.35rem;
+  height: 1.35rem;
+  accent-color: var(--secondary);
+}
+
+.features {
+  padding: 1rem 0;
+}
+
+.features legend span {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.features label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.features label:hover {
+  background: transparent;
+}
+
+.features input {
+  width: 1.35rem;
+  height: 1.35rem;
+  accent-color: var(--secondary);
+}
+
+.optional {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+input[type="submit"],
+.button-link {
+  width: 100%;
+  display: inline-block;
+  padding: 0.95rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--secondary);
+  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover,
+.button-link:hover {
+  background: var(--primary);
+}
+
+input[type="submit"]:active,
+.button-link:active {
+  transform: translateY(1px);
+}
+
+footer {
+  margin-top: 2.5rem;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
+
+.confirmation {
+  min-height: 52vh;
+  display: grid;
+  place-items: center;
+}
+
+.confirmation section {
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation h2 {
+  margin-top: 0;
+  color: var(--secondary);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+}
+
+.confirmation .button-link {
+  max-width: 320px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 1rem auto;
+  }
+
+  form,
+  .confirmation section {
+    padding: 1.25rem;
+  }
+
+  .rating-options {
+    gap: 0.25rem;
+  }
+
+  .rating-options label {
+    min-height: 74px;
+    padding: 0.4rem 0.1rem;
+  }
+
+  .rating-options span {
+    font-size: 0.9rem;
+  }
+}
