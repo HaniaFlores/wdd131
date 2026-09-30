@@ -54,7 +54,7 @@ form,
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 2rem;
-  box-shadow: 0 8px 24px rgba(36, 52, 71, 0.08);
+  box-shadow: 0 8px 24px #24344714;
 }
 
 label,
@@ -87,7 +87,7 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: none;
   border-color: var(--focus);
-  box-shadow: 0 0 0 3px rgba(44, 110, 145, 0.18);
+  box-shadow: 0 0 0 3px #2c6e912e;
 }
 
 textarea {
