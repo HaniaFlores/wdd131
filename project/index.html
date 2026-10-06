@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NextPlay Gaming Guide helps users discover video games and find their next game to play.">
+    <meta name="author" content="Hania Flores">
+    <title>NextPlay Gaming Guide | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/nextplay.css">
+    <script src="scripts/game-data.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+    <div class="container header-container">
+
+        <a class="brand" href="index.html">
+            <img
+                src="images/logo.svg"
+                alt="NextPlay game controller logo"
+                class="logo"
+                width="60"
+                height="60"
+            >
+
+            <div class="brand-text">
+                <span class="brand-name">NextPlay</span>
+                <span class="brand-subtitle">Gaming Guide</span>
+            </div>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav id="primary-nav" class="primary-nav">
+            <ul>
+                <li>
+                    <a href="index.html" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="games.html">Games</a>
+                </li>
+                <li>
+                    <a href="recommendations.html">Recommendations</a>
+                </li>
+                <li>
+                    <a href="references.html">References</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<main id="main-content">
+
+    <section class="hero">
+        <div class="container hero-content">
+
+            <p class="eyebrow">NEXTPLAY GAMING GUIDE</p>
+
+            <h1>Discover Your Next Game</h1>
+
+            <p>
+                Find, explore, and save video games that match
+                your interests.
+            </p>
+
+            <a class="button primary-button" href="games.html">
+                Browse Games
+            </a>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">START EXPLORING</p>
+                    <h2>Featured Games</h2>
+                </div>
+
+            </div>
+
+
+            <div class="game-grid featured-grid">
+
+                <article class="game-card">
+
+                    <img
+                        src="images/minecraft.webp"
+                        alt="Minecraft game artwork"
+                        width="400"
+                        height="225"
+                        loading="lazy"
+                    >
+
+                    <div class="game-card-content">
+
+                        <span class="genre-label">Adventure</span>
+
+                        <h3>Minecraft</h3>
+
+                        <p>
+                            Build, explore, and survive in a world
+                            made entirely of blocks.
+                        </p>
+
+                        <p class="rating">
+                            ★ 9.0 / 10
+                        </p>
+
+                        <button
+                            class="button primary-button
+                            small-button featured-save-button"
+                            type="button"
+                            data-id="1"
+                        >
+                            Add to Play List
+                        </button>
+
+                    </div>
+                </article>
+
+
+                <article class="game-card">
+
+                    <img
+                        src="images/forza-horizon-5.webp"
+                        alt="Forza Horizon 5 game artwork"
+                        width="400"
+                        height="225"
+                        loading="lazy"
+                    >
+
+                    <div class="game-card-content">
+
+                        <span class="genre-label">Racing</span>
+
+                        <h3>Forza Horizon 5</h3>
+
+                        <p>
+                            Explore an open world while driving
+                            hundreds of different vehicles.
+                        </p>
+
+                        <p class="rating">
+                            ★ 9.0 / 10
+                        </p>
+
+                        <button
+                            class="button primary-button
+                            small-button featured-save-button"
+                            type="button"
+                            data-id="2"
+                        >
+                            Add to Play List
+                        </button>
+
+                    </div>
+                </article>
+
+
+                <article class="game-card">
+
+                    <img
+                        src="images/rocket-league.webp"
+                        alt="Rocket League game artwork"
+                        width="400"
+                        height="225"
+                        loading="lazy"
+                    >
+
+                    <div class="game-card-content">
+
+                        <span class="genre-label">Sports</span>
+
+                        <h3>Rocket League</h3>
+
+                        <p>
+                            Play fast-paced soccer matches using
+                            rocket-powered vehicles.
+                        </p>
+
+                        <p class="rating">
+                            ★ 8.5 / 10
+                        </p>
+
+                        <button
+                            class="button primary-button
+                            small-button featured-save-button"
+                            type="button"
+                            data-id="3"
+                        >
+                            Add to Play List
+                        </button>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <p
+                id="featured-game-message"
+                class="status-message"
+                aria-live="polite"
+            ></p>
+
+            <div class="center-button">
+                <a class="button primary-button" href="games.html">
+                    View All Games
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section section-soft">
+
+        <div class="container">
+
+            <div class="section-heading simple-heading">
+                <div>
+                    <p class="eyebrow">WHY NEXTPLAY?</p>
+                    <h2>Why Use NextPlay?</h2>
+                </div>
+            </div>
+
+
+            <div class="why-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon" aria-hidden="true">
+                        🔎
+                    </div>
+
+                    <div>
+                        <h3>Discover New Games</h3>
+
+                        <p>
+                            Find games based on your interests,
+                            favorite genres, and gaming platform.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon" aria-hidden="true">
+                        ★
+                    </div>
+
+                    <div>
+                        <h3>Get Recommendations</h3>
+
+                        <p>
+                            Explore highly rated games and find
+                            something new to play.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon" aria-hidden="true">
+                        ☷
+                    </div>
+
+                    <div>
+                        <h3>Save Your Favorites</h3>
+
+                        <p>
+                            Create a personal Play Later list that
+                            stays saved in your browser.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-container">
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Hania Flores | Mexico
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+        <p>
+            <a href="references.html">References</a>
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
