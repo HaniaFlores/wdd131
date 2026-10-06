@@ -237,7 +237,7 @@ p {
 
     border: 0;
 
-    background: transparent;
+    background: #0000;
 
     color: var(--primary);
 
@@ -342,7 +342,7 @@ p {
 .remove-button {
     background-color: var(--danger);
 
-    color: white;
+    color: #fff;
 }
 
 
@@ -369,8 +369,8 @@ p {
     background:
         radial-gradient(
             circle at 50% 20%,
-            rgba(56, 189, 248, 0.3),
-            transparent 35%
+            #38bdf84d,
+            #0000 35%
         ),
         linear-gradient(
             135deg,
@@ -489,7 +489,7 @@ p {
     border-radius: var(--radius);
 
     box-shadow:
-        0 5px 15px rgba(15, 23, 42, 0.06);
+        0 5px 15px #0f172a0f;
 }
 
 
@@ -661,7 +661,7 @@ input {
 
     border-radius: 5px;
 
-    background-color: white;
+    background-color: #fff;
 
     color: var(--text);
 }
@@ -669,7 +669,7 @@ input {
 
 select:focus,
 input:focus {
-    outline: 3px solid rgba(56, 189, 248, 0.3);
+    outline: 3px solid #38bdf84d;
 
     border-color: var(--accent-dark);
 }
