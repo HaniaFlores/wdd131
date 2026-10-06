@@ -2,7 +2,6 @@
     --navy: #0f172a;
     --blue: #38bdf8;
     --white: #f8fafc;
-    --light-gray: #e2e8f0;
     --dark-gray: #334155;
 }
 
@@ -53,27 +52,6 @@ section {
     padding: 1.5rem;
     background-color: white;
     border-radius: 8px;
-}
-
-.site-branding {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.site-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.site-branding h1 {
-    margin: 0;
-}
-
-.site-branding p {
-    margin: 0.25rem 0 0;
 }
 
 .site-name {
@@ -152,15 +130,6 @@ footer p {
 
     h1 {
         font-size: 1.7rem;
-    }
-
-     .site-branding {
-        flex-direction: column;
-    }
-
-    .site-logo {
-        width: 65px;
-        height: 65px;
     }
 
     .site-name {

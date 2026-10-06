@@ -1,6 +1,5 @@
 :root {
     --primary: #0f172a;
-    --primary-light: #1e293b;
     --accent: #38bdf8;
     --accent-dark: #0284c7;
     --background: #f8fafc;
@@ -340,19 +339,6 @@ p {
 }
 
 
-.secondary-button {
-    background-color: var(--primary);
-
-    color: var(--background);
-}
-
-
-.secondary-button:hover,
-.secondary-button:focus {
-    background-color: var(--primary-light);
-}
-
-
 .remove-button {
     background-color: var(--danger);
 
@@ -475,13 +461,6 @@ p {
 }
 
 
-.text-link {
-    color: var(--accent-dark);
-
-    font-weight: 700;
-}
-
-
 /* =========================
    GAME CARDS
 ========================= */
@@ -517,9 +496,10 @@ p {
 .game-card img {
     width: 100%;
 
-    aspect-ratio: 16 / 9;
+    height: 200px;
 
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 
     background-color: var(--surface-soft);
 }
@@ -840,8 +820,10 @@ input:focus {
 
     height: 65px;
 
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 
+    background-color: var(--surface-soft);
     border-radius: 5px;
 }
 
